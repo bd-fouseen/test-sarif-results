@@ -6,7 +6,7 @@
       "tool": {
         "driver": {
           "name": "ExampleAnalyzer",
-          "informationUri": "https://get.sigma.io"
+          "informationUri": "https://get.sigma.io",
           "rules": [
             {
               "id":"SQL001",
