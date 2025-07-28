@@ -59,7 +59,9 @@
             }
           ],
           "properties": {
-            "cwe": "CWE-89"
+            "tags": [
+              "cwe-89"
+            ]
           }
         }
       ]
