@@ -13,11 +13,6 @@
               "name": "SQL Injection",
               "shortDescription": {
                 "text": "Detects potential SQL injection vulnerabilities."
-              },
-              "properties": {
-                "tags": [
-                  "cwe-89"
-                ]
               }
             }
           ]
@@ -60,7 +55,7 @@
             }
           ],
           "properties": {
-            "tags": [
+            "cwe": [
               "cwe-89"
             ]
           }
