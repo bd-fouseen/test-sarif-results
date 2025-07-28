@@ -55,9 +55,7 @@
             }
           ],
           "properties": {
-            "cwe": [
-              "cwe-89"
-            ]
+            "cwe": "cwe-89"
           }
         }
       ]
