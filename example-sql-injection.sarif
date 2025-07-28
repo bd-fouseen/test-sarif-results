@@ -1,27 +1,26 @@
 {
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
   "version": "2.1.0",
   "runs": [
     {
       "tool": {
         "driver": {
           "name": "ExampleAnalyzer",
+          "informationUri": "https://get.sigma.io"
           "rules": [
             {
-              "id":"SQL001",
+              "id": "SQL001",
               "name": "SQL Injection",
               "shortDescription": {
                 "text": "Detects potential SQL injection vulnerabilities."
               },
-              "fullDescription": {
-                "text": "This rule identifies places in the code where user input is used directly in SQL queries, which can lead to SQL injection attacks."
-              },
               "properties": {
+                "security-severity": "8.5",
                 "tags": [
                   "security",
                   "external/cwe/cwe-89"
                 ],
-                "problem.severity": "error",
-                "security-severity": "8.5"
+                "problem.severity": "error"
               }
             }
           ]
