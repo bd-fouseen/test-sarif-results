@@ -15,8 +15,9 @@
                 "text": "Detects potential SQL injection vulnerabilities."
               },
               "properties": {
-                "security-severity": "8.5",
-                "problem.severity": "error"
+                "tags": [
+                  "cwe-89"
+                ]
               }
             }
           ]
