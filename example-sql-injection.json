@@ -17,7 +17,6 @@
               "properties": {
                 "security-severity": "8.5",
                 "tags": [
-                  "security",
                   "external/cwe/cwe-89"
                 ],
                 "problem.severity": "error"
@@ -39,7 +38,7 @@
                   "uri": "src/app.js"
                 },
                 "region": {
-                  "startLine": 42
+                  "startLine": 3
                 }
               }
             }
@@ -57,7 +56,7 @@
                   "uri": "src/app.js"
                 },
                 "region": {
-                  "startLine": 42
+                  "startLine": 3
                 }
               }
             }
