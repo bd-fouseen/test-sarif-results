@@ -44,6 +44,24 @@
               }
             }
           ]
+        },
+        {
+          "ruleId": "SQL001",
+          "message": {
+            "text": "Possible SQL injection vulnerability."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/app.js"
+                },
+                "region": {
+                  "startLine": 42
+                }
+              }
+            }
+          ]
         }
       ]
     }
