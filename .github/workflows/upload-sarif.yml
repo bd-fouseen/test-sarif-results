@@ -3,7 +3,7 @@ name: Upload SARIF
 on:
   push:
     paths:
-      - example-sql-injection.sarif  # Trigger only when this file changes
+      - example-sql-injection.json  # Trigger only when this file changes
 
 jobs:
   upload:
@@ -18,4 +18,4 @@ jobs:
       - name: Upload SARIF file
         uses: github/codeql-action/upload-sarif@v3
         with:
-          sarif_file: example-sql-injection.sarif
+          sarif_file: example-sql-injection.json
