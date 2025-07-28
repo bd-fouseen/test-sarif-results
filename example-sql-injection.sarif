@@ -9,7 +9,7 @@
           "informationUri": "https://get.sigma.io"
           "rules": [
             {
-              "id": "SQL001",
+              "id":"SQL001",
               "name": "SQL Injection",
               "shortDescription": {
                 "text": "Detects potential SQL injection vulnerabilities."
