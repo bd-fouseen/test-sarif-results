@@ -3,17 +3,19 @@ name: Upload SARIF
 on:
   push:
     paths:
-      - example-sql-injection.sarif
+      - example-sql-injection-fixed.sarif  # Trigger only when this file changes
 
 jobs:
   upload:
     runs-on: ubuntu-latest
+    permissions:
+      security-events: write  # Required to upload SARIF files
+
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Upload SARIF file
-        uses: github/codeql-action/upload-sarif@v3
+        uses: github/codeql-action/upload-sarif@v2
         with:
-          sarif_file: example-sql-injection.sarif
-
+          sarif_file: example-sql-injection-fixed.sarif
