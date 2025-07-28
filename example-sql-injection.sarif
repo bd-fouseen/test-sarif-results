@@ -1,0 +1,52 @@
+{
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "ExampleAnalyzer",
+          "rules": [
+            {
+              "id": "SQL001",
+              "name": "SQL Injection",
+              "shortDescription": {
+                "text": "Detects potential SQL injection vulnerabilities."
+              },
+              "fullDescription": {
+                "text": "This rule identifies places in the code where user input is used directly in SQL queries, which can lead to SQL injection attacks."
+              },
+              "properties": {
+                "tags": [
+                  "security",
+                  "external/cwe/cwe-89"
+                ],
+                "problem.severity": "error",
+                "security-severity": "8.5"
+              }
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "SQL001",
+          "message": {
+            "text": "Possible SQL injection vulnerability."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/app.js"
+                },
+                "region": {
+                  "startLine": 42
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
