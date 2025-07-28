@@ -17,7 +17,7 @@
               "properties": {
                 "security-severity": "8.5",
                 "tags": [
-                  "external/cwe/cwe-89"
+                  "cwe-89"
                 ],
                 "problem.severity": "error"
               }
